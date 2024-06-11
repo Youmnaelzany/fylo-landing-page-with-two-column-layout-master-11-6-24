@@ -1,0 +1,79 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Frontend Mentor | Fylo landing page with two column layout',
+  description = 'Frontend Mentor | Fylo landing page with two column layout',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content={description} />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/images/favicon-32x32.png' />
+    <meta name='generator' content={Astro.generator} />
+    <!-- Google Fonts -->
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+    <!-- Font Awesome -->
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+      integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  html {
+    hanging-punctuation: first last;
+  }
+
+  body {
+    min-height: 100svh;
+  }
+
+  img,
+  picture,
+  svg,
+  video {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+      scroll-behavior: smooth;
+      scroll-padding-top: 3rem;
+    }
+  }
+</style>

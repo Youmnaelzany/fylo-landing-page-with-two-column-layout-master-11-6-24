@@ -1,0 +1,424 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+---
+
+<Layout title='Fylo landing page with two column layout.'>
+  <header
+    class='mx-6 mt-6 flex items-center justify-between gap-20 md:mx-20 md:mt-[4.06rem]'
+  >
+    <img src='/images/logo.svg' alt='' class='w-16 md:w-[10.375rem]' />
+    <nav>
+      <ul class='flex items-center justify-between gap-6 md:gap-[3.56rem]'>
+        <li>
+          <a
+            href='/'
+            class='font-Raleway text-xs font-normal leading-normal text-[#07043B] md:text-base'
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href='/'
+            class='font-Raleway text-xs font-normal leading-normal text-[#07043B] md:text-base'
+            >Team</a
+          >
+        </li>
+        <li>
+          <a
+            href='/'
+            class='font-Raleway text-xs font-normal leading-normal text-[#07043B] md:text-base'
+          >
+            Sign In
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero/ First Section -->
+    <section
+      class='ml-7 mr-[1.69rem] mt-[6.44rem] flex flex-col items-center justify-center gap-10 text-center md:mx-20 md:flex-row-reverse md:justify-between md:text-left'
+    >
+      <div class=''>
+        <img
+          src='/images/illustration-1.svg'
+          alt=''
+          class='h-[14.0625rem] w-[19rem] md:h-[29.625rem] md:w-[40rem]'
+        />
+      </div>
+      <div class='flex w-80 flex-col gap-6 md:w-[39.1875rem] md:gap-[0.94rem]'>
+        <h1
+          class='font-sans text-2xl font-bold leading-9 text-[#07043B] md:text-[2.5rem] md:leading-[3.75rem]'
+        >
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p
+          class='font-sans text-sm font-normal leading-[1.3125rem] text-[#07043B] md:text-[1.0625rem] md:leading-6 md:tracking-[0.03319rem]'
+        >
+          Fylo stores your most important files in one secure location. Access
+          them wherever you need, share and collaborate with friends, family,
+          and co-workers.
+        </p>
+        <form action='' novalidate>
+          <div
+            class='relative flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start md:gap-4'
+          >
+            <label for='emailInput1' aria-label='Enter your email'></label>
+            <input
+              type='email'
+              name='email'
+              id='emailInput1'
+              placeholder='Enter your email'
+              class='emailInput md:W-80 h-10 w-[19rem] border-[0.625px] border-solid border-[#07043B] pl-[1.31rem] text-xs font-normal leading-normal tracking-[0.025rem] text-[#07043B] outline-none placeholder:text-[#C2C2C2] md:h-[2.8125rem] md:text-sm md:tracking-[0.02919rem]'
+            />
+            <span
+              id='emailError1'
+              class='emailError absolute left-[7px] top-[55px] hidden font-sans text-[0.625rem] font-normal leading-normal tracking-[0.025rem] text-[#EF4877] md:top-[48px] md:text-xs'
+              >Please check your email</span
+            >
+
+            <button
+              id='submitBtn1'
+              type='submit'
+              class='submitBtn h-10 w-[19rem] cursor-pointer bg-[#2F65F8] font-Raleway text-sm font-bold leading-normal text-white outline-none transition-colors duration-300 ease-in hover:bg-[#6C9BFF] md:h-[2.8125rem] md:w-[12.5rem]'
+              >Get Started</button
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Second Section -->
+    <section
+      class='relative mt-[12.19rem] flex flex-col items-center justify-center gap-[5.44rem] bg-[#F8F8FE] pb-[5.12rem] pl-7 pr-[1.69rem] text-center md:mt-[21.38rem] md:flex-row-reverse md:items-start md:justify-between md:px-20 md:pb-[6.69rem] md:text-left'
+    >
+      <picture>
+        <source
+          media='(min-width: 768px)'
+          srcset='/images/bg-curve-desktop.svg'
+        />
+        <img
+          src='/images/bg-curve-mobile.svg'
+          alt=''
+          class='absolute left-0 top-[-53px] md:top-[-115px]'
+        />
+      </picture>
+      <!-- illustration-2 -->
+      <div class=''>
+        <img
+          src='/images/illustration-2.svg'
+          alt=''
+          class='h-[15.0625rem] w-80 md:h-[25.5625rem] md:w-[33.875rem]'
+        />
+      </div>
+      <div class='flex flex-col gap-[2.94rem] md:gap-[3.13rem]'>
+        <!-- Stay productive -->
+        <div class='flex flex-col gap-6 md:gap-[2.38rem]'>
+          <h2
+            class='font-Raleway text-base font-bold leading-6 text-[#07043B] md:w-[45rem] md:text-[2.5rem] md:leading-normal'
+          >
+            Stay productive, wherever you are
+          </h2>
+          <div class='flex w-80 flex-col gap-4 md:w-[33.0625rem]'>
+            <p
+              class='font-sans text-sm font-normal leading-[1.3125rem] text-[#615F7E] md:text-base md:leading-6'
+            >
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p
+              class='font-sans text-sm font-normal leading-[1.3125rem] text-[#615F7E] md:text-base md:leading-6'
+            >
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
+          <div
+            class='mt-3 flex items-center justify-center md:mt-[-1.44rem] md:items-start md:justify-start'
+          >
+            <a
+              href='/'
+              class='relative flex items-center gap-2 font-sans text-xs font-normal leading-normal text-[#3DA08F] transition-colors duration-300 ease-in after:absolute after:-bottom-1 after:left-0 after:h-[0.0625rem] after:w-[8.125rem] after:bg-[#3DA08F] hover:text-[#71DFCC] hover:after:bg-[#71DFCC] md:text-base md:after:w-[10.375rem]'
+              >See how Fylo works
+              <img src='/images/icon-arrow.svg' alt='' class='' />
+            </a>
+          </div>
+        </div>
+        <!-- Testimonial -->
+        <div
+          class='testBox mx-auto flex h-[10.56881rem] w-[17.5rem] flex-col items-center justify-center rounded-[0.24581rem] bg-white pb-[1.2rem] pl-[1.62rem] pr-[0.8rem] pt-[1.59rem] text-left md:mx-0 md:h-[13.4375rem] md:w-[22.25rem] md:items-start md:rounded-[0.3125rem] md:pb-[1.63rem] md:pl-[2.06rem] md:pr-[2.12rem] md:pt-7'
+        >
+          <img src='/images/icon-quotes.svg' alt='' class='' />
+          <p
+            class='font-sans text-[0.625rem] font-normal leading-[1.13063rem] tracking-[0.02406rem] text-[#07043B] md:text-sm md:leading-[1.4375rem] md:tracking-[0.03125rem]'
+          >
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class='mt-4 flex items-center gap-4'>
+            <img
+              src='/images/avatar-testimonial.jpg'
+              alt=''
+              class='size-6 rounded-full md:size-8'
+            />
+            <div class=''>
+              <h3
+                class='font-sans text-[0.5625rem] font-bold leading-normal tracking-[0.02813rem] text-[#07043B] md:text-[0.6875rem] md:tracking-[0.03438rem]'
+              >
+                Kyle Burton
+              </h3>
+              <h4
+                class='font-sans text-[0.375rem] font-normal leading-[0.73738rem] tracking-[0.01875rem] text-[#07043B] md:text-[0.5rem] md:leading-[0.9375rem] md:tracking-[0.025rem]'
+              >
+                Founder & CEO, Huddle
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Third Section -->
+    <section
+      class='flex flex-col items-center justify-center gap-6 bg-[#575988] pb-[4.44rem] pl-12 pr-[2.94rem] pt-[3.57rem] text-center md:flex-row md:items-start md:justify-between md:px-20 md:pb-[6.12rem] md:pt-28 md:text-left'
+    >
+      <div class='flex flex-col gap-4'>
+        <h2 class='font-Raleway text-lg font-bold leading-6 text-white'>
+          Get early access today
+        </h2>
+        <p
+          class='w-[17.5rem] font-sans text-sm font-normal leading-[1.3125rem] text-white md:w-[33.3125rem]'
+        >
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+      </div>
+      <form action='' novalidate>
+        <div
+          class='relative flex flex-col items-center justify-center gap-4 md:items-start md:justify-start'
+        >
+          <label for='emailInput' aria-label='Enter your email'></label>
+          <input
+            type='email'
+            name='email'
+            id='emailInput'
+            placeholder='email@example.com'
+            class='emailInput h-8 w-60 pl-[1.31rem] font-Raleway text-[0.625rem] font-normal leading-normal text-[#07043B] outline-none placeholder:text-[#C0C0C0] md:h-12 md:w-[30rem] md:text-xs'
+          />
+          <span
+            id='emailError'
+            class='emailError absolute left-0 top-[48px] hidden font-sans text-[0.625rem] font-normal leading-normal tracking-[0.025rem] text-[#EF4877] md:top-[63px] md:text-xs'
+            >Please check your email</span
+          >
+          <button
+            id='submitBtn'
+            type='submit'
+            class='submitBtn h-8 w-60 cursor-pointer bg-[#2F65F8] font-Raleway text-[0.625rem] font-bold leading-normal text-white transition-colors duration-300 ease-in hover:bg-[#6C9BFF] md:h-12 md:w-[12.5rem] md:text-sm'
+            >Get Started For Free</button
+          >
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer
+    class='flex flex-col gap-8 bg-[#07043B] pb-[2.62rem] pl-[2.44rem] pt-[4.06rem] md:gap-[2.31rem] md:px-20 md:pb-[5.37rem] md:pt-[5.75rem]'
+  >
+    <!-- Logo -->
+    <div class=''>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='76'
+        height='39'
+        viewBox='0 0 76 39'
+        fill='none'
+      >
+        <path
+          fill-rule='evenodd'
+          clip-rule='evenodd'
+          d='M70.8108 19.482C70.8108 18.5937 70.6547 17.7655 70.3423 16.9972C70.03 16.229 69.6036 15.5568 69.0631 14.9806C68.5225 14.4044 67.8919 13.9543 67.1712 13.6302C66.4505 13.3061 65.6817 13.144 64.8649 13.144C64.0481 13.144 63.2793 13.3061 62.5585 13.6302C61.8378 13.9543 61.2072 14.4044 60.6667 14.9806C60.1261 15.5568 59.6997 16.229 59.3874 16.9972C59.0751 17.7655 58.9189 18.5937 58.9189 19.482C58.9189 20.3703 59.0751 21.1985 59.3874 21.9667C59.6997 22.735 60.1261 23.4072 60.6667 23.9834C61.2072 24.5596 61.8378 25.0097 62.5585 25.3338C63.2793 25.6579 64.0481 25.8199 64.8649 25.8199C65.6817 25.8199 66.4505 25.6579 67.1712 25.3338C67.8919 25.0097 68.5225 24.5596 69.0631 23.9834C69.6036 23.4072 70.03 22.735 70.3423 21.9667C70.6547 21.1985 70.8108 20.3703 70.8108 19.482ZM76 19.482C76 21.0425 75.7117 22.4889 75.1351 23.8213C74.5586 25.1537 73.7658 26.3061 72.7568 27.2784C71.7477 28.2507 70.5646 29.0189 69.2072 29.5831C67.8498 30.1473 66.4024 30.4294 64.8649 30.4294C63.3273 30.4294 61.8859 30.1473 60.5405 29.5831C59.1952 29.0189 58.018 28.2447 57.009 27.2604C56 26.2761 55.2072 25.1177 54.6307 23.7853C54.0541 22.4529 53.7658 21.0185 53.7658 19.482C53.7658 17.9696 54.0601 16.5471 54.6486 15.2147C55.2372 13.8823 56.036 12.7179 57.045 11.7216C58.054 10.7253 59.2312 9.94507 60.5766 9.38087C61.9219 8.81672 63.3513 8.53462 64.8649 8.53462C66.4024 8.53462 67.8498 8.81672 69.2072 9.38087C70.5646 9.94507 71.7477 10.7133 72.7568 11.6856C73.7658 12.6579 74.5586 13.8162 75.1351 15.1606C75.7117 16.5051 76 17.9455 76 19.482ZM51.964 29.7811C51.5555 29.9732 51.0931 30.1293 50.5766 30.2493C50.0601 30.3694 49.5255 30.4294 48.973 30.4294C48.2042 30.4294 47.4655 30.3273 46.7567 30.1233C46.0481 29.9192 45.4294 29.5891 44.9009 29.133C44.3724 28.6769 43.9519 28.0826 43.6396 27.3504C43.3273 26.6182 43.1712 25.7359 43.1712 24.7036V0H48.4685V23.8033C48.4685 24.6676 48.6427 25.2618 48.991 25.5859C49.3394 25.91 49.7537 26.072 50.2342 26.072C50.8348 26.072 51.4114 25.892 51.964 25.5319V29.7812V29.7811ZM40.8288 9.03878L31.4594 33.7784C30.7628 35.627 29.8498 36.9594 28.7207 37.7756C27.5916 38.5919 26.2462 39 24.6847 39C24.4445 39 24.1802 38.982 23.8919 38.946C23.6036 38.91 23.3273 38.856 23.0631 38.784L21.3333 33.9585C21.7417 34.1506 22.1622 34.3005 22.5946 34.4086C23.027 34.5166 23.4354 34.5706 23.8198 34.5706C24.6366 34.5706 25.3814 34.3846 26.054 34.0125C26.7267 33.6404 27.2432 32.9502 27.6036 31.9418L28.3243 29.8532L20.2883 9.03878H25.946L30.7387 22.4349L35.2432 9.03878H40.8288ZM19.027 5.90582H5.47747V12.6039H18.8468V17.1413H5.47747V29.8892H0V1.11632H19.027V5.90582Z'
+          fill='white'></path>
+      </svg>
+    </div>
+    <div
+      class='flex flex-col gap-8 md:flex-row md:items-start md:justify-between'
+    >
+      <!-- Phone Number & Address -->
+      <div class='flex flex-col gap-4'>
+        <div class='flex items-center gap-4'>
+          <img src='/images/icon-phone.svg' alt='phone' class='' />
+          <h3 class='font-sans text-base font-normal leading-6 text-white'>
+            Phone: +1-543-123-4567
+          </h3>
+        </div>
+        <div class='flex items-center gap-4'>
+          <img src='/images/icon-email.svg' alt='email' class='' />
+          <h3 class='font-sans text-base font-normal leading-6 text-white'>
+            example@fylo.com
+          </h3>
+        </div>
+      </div>
+      <!-- Nav Links 1 -->
+      <nav class=''>
+        <ul class='flex flex-col gap-4'>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Jobs</a
+            >
+          </li>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Press</a
+            >
+          </li>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Nav Links 2 -->
+      <nav class=''>
+        <ul class='flex flex-col gap-4'>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Terms</a
+            >
+          </li>
+          <li>
+            <a
+              href='/'
+              class='cursor-pointer font-sans font-normal leading-normal text-white transition-colors duration-300 ease-in hover:text-[#6C9BFF]'
+              >Privacy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Social Media Links -->
+      <div class='flex items-center gap-4'>
+        <a
+          aria-label='Facebook'
+          href='/'
+          class='flex size-[1.9515rem] items-center justify-center rounded-full border border-solid border-[#DFE4F0] text-white transition-colors duration-300 ease-in hover:border-[#6C9BFF] hover:text-[#6C9BFF]'
+        >
+          <i class='fa-brands fa-facebook-f'></i>
+        </a>
+        <a
+          aria-label='Twitter'
+          href='/'
+          class='flex size-[1.9515rem] items-center justify-center rounded-full border border-solid border-[#DFE4F0] text-white transition-colors duration-300 ease-in hover:border-[#6C9BFF] hover:text-[#6C9BFF]'
+        >
+          <i class='fa-brands fa-twitter'></i>
+        </a>
+        <a
+          aria-label='Instagram'
+          href='/'
+          class='flex size-[1.9515rem] items-center justify-center rounded-full border border-solid border-[#DFE4F0] text-white transition-colors duration-300 ease-in hover:border-[#6C9BFF] hover:text-[#6C9BFF]'
+        >
+          <i class='fa-brands fa-instagram'></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .emailInput,
+  .submitBtn {
+    filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+  }
+  .testBox {
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.05);
+  }
+</style>
+
+<script is:inline>
+  const emailInput = document.getElementById('emailInput');
+  const emailError = document.getElementById('emailError');
+  const submitBtn = document.getElementById('submitBtn');
+  const emailInput1 = document.getElementById('emailInput1');
+  const emailError1 = document.getElementById('emailError1');
+  const submitBtn1 = document.getElementById('submitBtn1');
+
+  if (emailInput) {
+    const emailRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    function validateEmail() {
+      const email = emailInput.value.trim();
+
+      if (!emailRegex.test(email)) {
+        emailError.classList.remove('hidden');
+        emailInput.classList.add('border-red-500');
+      } else {
+        clearErrorState();
+      }
+    }
+
+    function clearErrorState() {
+      emailError.classList.add('hidden');
+      emailInput.classList.remove('border-red-500');
+    }
+
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      validateEmail();
+    });
+
+    emailInput.addEventListener('input', validateEmail);
+    emailInput.addEventListener('focus', clearErrorState);
+  }
+
+  if (emailInput1) {
+    const emailRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    function validateEmail() {
+      const email = emailInput1.value.trim();
+
+      if (!emailRegex.test(email)) {
+        emailError1.classList.remove('hidden');
+        emailInput1.classList.add('border-red-500');
+      } else {
+        clearErrorState();
+      }
+    }
+
+    function clearErrorState() {
+      emailError1.classList.add('hidden');
+      emailInput1.classList.remove('border-red-500');
+    }
+
+    submitBtn1.addEventListener('click', (e) => {
+      e.preventDefault();
+      validateEmail();
+    });
+
+    emailInput1.addEventListener('input', validateEmail);
+    emailInput1.addEventListener('focus', clearErrorState);
+  }
+</script>
